@@ -1,6 +1,6 @@
 {
   "name": "eseries",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "E-series preferred values library (E12, E24, etc.) for electronic components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

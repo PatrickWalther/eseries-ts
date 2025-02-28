@@ -1,5 +1,10 @@
 import tseslint from 'typescript-eslint';
 
+// Polyfill structuredClone if it doesn't exist in the environment
+if (typeof structuredClone !== 'function') {
+  global.structuredClone = obj => JSON.parse(JSON.stringify(obj));
+}
+
 export default tseslint.config(
   {
     extends: [
